@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "trouble_log.schema.json",
+  "title": "TroubleLog",
+  "description": "現場トラブル対応ログ（1トラブル=1レコード、全業種共通）。troublelog/models.py と対応。ロール・分類・対応種別・ドラフト種別の選択肢は業種パック troublelog/industries/<industry>.json で定義され、CLIで検証される。",
+  "type": "object",
+  "required": [
+    "trouble_id",
+    "industry",
+    "created_at",
+    "reporter",
+    "site",
+    "category",
+    "summary",
+    "severity",
+    "status",
+    "events",
+    "drafts"
+  ],
+  "properties": {
+    "trouble_id": {
+      "type": "string",
+      "pattern": "^TR-\\d{8}-\\d{3}$"
+    },
+    "industry": {
+      "enum": [
+        "construction",
+        "manufacturing",
+        "logistics"
+      ],
+      "description": "業種パックID（未設定の旧データは construction）"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "raw_report": {
+      "type": "string",
+      "description": "最初の一言報告（原文）"
+    },
+    "reporter": {
+      "type": "object",
+      "required": [
+        "role"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "description": "業種パックの roles のいずれか（建設: 職人/協力会社/元請 など）"
+        },
+        "company": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "tier": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "最上位=0。意味は業種パックの tier_label"
+        }
+      }
+    },
+    "site": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "description": "業種パックの categories のいずれか"
+    },
+    "subcategory": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "高",
+        "中",
+        "低"
+      ]
+    },
+    "summary": {
+      "type": "object",
+      "required": [
+        "what"
+      ],
+      "properties": {
+        "what": {
+          "type": "string",
+          "minLength": 1
+        },
+        "when": {
+          "type": "string"
+        },
+        "where": {
+          "type": "string"
+        },
+        "impact": {
+          "type": "string"
+        },
+        "stakeholders": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "受付",
+        "対応中",
+        "解決"
+      ]
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "at",
+          "action",
+          "minutes"
+        ],
+        "properties": {
+          "at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "action": {
+            "type": "string",
+            "description": "共通（ヒアリング/ドラフト生成/連絡/調整/書類作成/現場対応/その他）＋業種パックの extra_actions（製造: 選別・手直し、運送: 荷待ち/附帯作業）"
+          },
+          "minutes": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "actor": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "time_band": {
+            "enum": [
+              "所定内",
+              "時間外",
+              "深夜",
+              "休日"
+            ]
+          },
+          "off_hours": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "drafts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "text",
+          "created_at"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "description": "業種パックの draft_types のいずれか（建設: 元請報告/協力会社依頼/対応案 など）"
+          },
+          "text": {
+            "type": "string"
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        }
+      }
+    },
+    "resolved_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "total_minutes": {
+      "type": "integer",
+      "description": "出力時の派生値"
+    }
+  }
+}

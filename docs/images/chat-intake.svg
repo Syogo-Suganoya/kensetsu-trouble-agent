@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="564" viewBox="0 0 620 564" role="img">
+<rect width="620" height="564" fill="#EAEFF4"/>
+<style>text{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic','Meiryo',system-ui,sans-serif;font-size:15px}</style>
+<rect x="349" y="18" width="253" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="363" y="44" fill="#13300B">生コン来ない、午後打設無理かも</text>
+<rect x="18" y="76" width="336" height="94" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="102" fill="#17232D">状況を整理します。2点だけ教えてください。</text>
+<text x="32" y="126" fill="#17232D">① 場所は何階・どこですか？</text>
+<text x="32" y="150" fill="#17232D">② 待機している人数と車両は？</text>
+<rect x="392" y="182" width="210" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="406" y="208" fill="#13300B">3階スラブ。6人とポンプ車</text>
+<rect x="18" y="240" width="283" height="166" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="266" fill="#17232D">【トラブル受付内容】</text>
+<text x="32" y="290" fill="#17232D">現場：〇〇マンション新築工事</text>
+<text x="32" y="314" fill="#17232D">分類：資材遅延・不足（重要度：高）</text>
+<text x="32" y="338" fill="#17232D">何が：13時打設予定の生コンが未着</text>
+<text x="32" y="362" fill="#17232D">影響：打設班6名・ポンプ車が待機中</text>
+<text x="32" y="386" fill="#17232D">この内容で登録してよいですか？</text>
+<rect x="558" y="418" width="44" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="572" y="444" fill="#13300B">OK</text>
+<rect x="18" y="476" width="261" height="70" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="502" fill="#17232D">登録しました。TR-20260915-001</text>
+<text x="32" y="526" fill="#17232D">ヒアリングの3分も記録しました。</text>
+</svg>

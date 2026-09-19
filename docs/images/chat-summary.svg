@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="236" viewBox="0 0 620 236" role="img">
+<rect width="620" height="236" fill="#EAEFF4"/>
+<style>text{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic','Meiryo',system-ui,sans-serif;font-size:15px}</style>
+<rect x="334" y="18" width="268" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="348" y="44" fill="#13300B">今月どれくらい対応に時間使った？</text>
+<rect x="18" y="76" width="351" height="142" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="102" fill="#17232D">9月のトラブル対応サマリ</text>
+<text x="32" y="126" fill="#17232D">件数：8件（解決5／対応中3）</text>
+<text x="32" y="150" fill="#17232D">対応時間：14時間20分</text>
+<text x="32" y="174" fill="#17232D">うち時間外：9時間40分（67%）</text>
+<text x="32" y="198" fill="#17232D">気づき：書類作成の7割が休日に発生しています</text>
+</svg>

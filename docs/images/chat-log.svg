@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="560" viewBox="0 0 620 560" role="img">
+<rect width="620" height="560" fill="#EAEFF4"/>
+<style>text{font-family:'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Yu Gothic','Meiryo',system-ui,sans-serif;font-size:15px}</style>
+<rect x="392" y="18" width="210" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="406" y="44" fill="#13300B">元請に電話で20分説明した</text>
+<rect x="18" y="76" width="240" height="70" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="102" fill="#17232D">記録しました。時間外・20分</text>
+<text x="32" y="126" fill="#17232D">この件の対応は累計43分です。</text>
+<rect x="264" y="158" width="338" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="278" y="184" fill="#13300B">昨日の夜23時から1時間、是正の報告書作った</text>
+<rect x="18" y="216" width="210" height="46" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="242" fill="#17232D">記録しました。深夜・60分</text>
+<rect x="264" y="274" width="338" height="70" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="278" y="300" fill="#13300B">センターで2時間待って、そのあと棚入れ40分</text>
+<text x="278" y="324" fill="#13300B">※運送の場合</text>
+<rect x="18" y="356" width="279" height="70" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="382" fill="#17232D">荷待ち120分と附帯作業40分に分けて</text>
+<text x="32" y="406" fill="#17232D">記録しました。</text>
+<rect x="454" y="438" width="148" height="46" rx="14" fill="#A9E36B" stroke="#93CF56"/>
+<text x="468" y="464" fill="#13300B">あの件は解決した</text>
+<rect x="18" y="496" width="238" height="46" rx="14" fill="#FFFFFF" stroke="#D3DBE2"/>
+<text x="32" y="522" fill="#17232D">ステータスを解決にしました。</text>
+</svg>
